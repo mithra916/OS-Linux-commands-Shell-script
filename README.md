@@ -43,10 +43,13 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
+![Screenshot from 2024-02-22 09-23-47](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/149986612/38e38938-3ee3-4eff-add6-74691ce07d4d)
 
 
 cat < file2
 ## OUTPUT
+
+![Screenshot from 2024-02-22 09-33-09](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/149986612/ca94c981-6da1-4c01-ba2b-64fc50b2b029)
 
 
 # Comparing Files
