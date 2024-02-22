@@ -1,4 +1,4 @@
-# OS-Linux-commands-Shell-scripting
+![Screenshot from 2024-02-22 09-33-09](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/149986612/890d55c5-06a6-4039-95db-90aef9a715e6)![Screenshot from 2024-02-22 09-33-09](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/149986612/3d5e1ba8-335d-4b3e-a0fb-55f8fff52d32)![Screenshot from 2024-02-22 09-33-09](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/149986612/0896f7f6-5957-4f71-be93-1799e05a8c94)# OS-Linux-commands-Shell-scripting
 Operating systems Lab exercise
 # Linux commands-Shell scripting
 Linux commands-Shell scripting
@@ -47,6 +47,9 @@ cat < file1
 
 cat < file2
 ## OUTPUT
+
+![Screenshot from 2024-02-22 09-33-09](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/149986612/58e2a962-2c92-4dfb-a34b-51419f60b1d2)
+
 
 
 # Comparing Files
