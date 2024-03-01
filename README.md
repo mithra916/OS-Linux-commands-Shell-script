@@ -43,23 +43,28 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
-
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/0661159e-07ed-4fc0-a623-f06eb2d2a11c)
 
 cat < file2
 ## OUTPUT
 
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/703d2b2f-f9f7-46e3-8379-3c14e0f9f3d8)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+
+ ![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/2767eb0c-f66f-45ed-93e7-3a4c7b96f8d2)
+
 comm file1 file2
  ## OUTPUT
 
- 
+ ![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/f717da3e-0f81-42a8-bfef-a6070c7e2a5f)
+
 diff file1 file2
 ## OUTPUT
 
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/0284e169-b739-4c99-a5aa-aa6d86764ff5)
 
 #Filters
 
@@ -83,17 +88,17 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
-
-
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/d82fa44e-404f-441f-8174-22b913180dd8)
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/84f293a4-597d-4365-a8ed-896626397832)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
 
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/f0f42839-97e1-4235-9b19-3174c7b44434)
 
 cat < newfile 
 ```
@@ -108,30 +113,27 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/ff62afbc-ad70-44dc-afca-ed3d2cd59b3e)
 
 grep hello newfile 
 ## OUTPUT
 
-
-
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/746e48f8-208b-4983-8475-fdc188d9de62)
 
 grep -v hello newfile 
 ## OUTPUT
 
-
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/c5f9b352-a1bc-4017-b61c-aa3040b5634b)
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-
-
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/f0c24cac-cf75-468b-b7b0-71795e307de1)
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
-
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/315983ef-6f08-494b-af66-b9c71b7f748e)
 
 grep -R ubuntu /etc
 ## OUTPUT
