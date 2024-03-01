@@ -367,6 +367,8 @@ uniq file22
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
 
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/0ef1cd08-905d-4508-b6d6-6805a87d3bbd)
+
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -383,16 +385,23 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/fede2576-2fba-4663-a30c-bbc6a3e41fa4)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/1d256c7c-645c-44ae-94c0-b43742db5136)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/be3022b8-cd04-456c-915b-f3244f11a9e8)
+
+
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/5fe44737-6f37-4e70-b9ef-353d7f59dc77)
 
 
 mkdir backupdir
