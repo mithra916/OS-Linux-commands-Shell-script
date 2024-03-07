@@ -909,6 +909,14 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+```
+#!/bin/bash
+# multiple variables
+for (( a=1, b=5; a <= 5; a++, b-- ))
+do
+echo "$a - $b"
+done
+```
 
 cat fornested1.sh 
 ```bash
@@ -927,7 +935,20 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+```
+Starting loop 1:
+Inside loop: 1
+Inside loop: 2
+Inside loop: 3
+Starting loop 2:
+Inside loop: 1
+Inside loop: 2
+Inside loop: 3
+Starting loop 3:
+Inside loop: 1
+Inside loop: 2
+Inside loop: 3
+```
  
 cat forbreak.sh 
 ```bash
@@ -944,7 +965,10 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
-
+```
+Enter your name: Venkatanathan
+Hello Venkatanathan, welcome to my program.
+```
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
@@ -983,7 +1007,10 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+```
+Enter your name: Venkatanathan
+Hello Venkatanathan, welcome to my program.
+```
 
  cat exread1.sh
 ```bash
@@ -995,8 +1022,11 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-
-
+```
+Enter your name: Venkatanathan
+./exread1.sh: line 4: unexpected EOF while looking for matching `"'
+./exread1.sh: line 5: syntax error: unexpected end of file
+```
 
 $ ./exread1.sh 
  
@@ -1017,11 +1047,14 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
+```
+bash: ./funcex.sh: Permission denied
+```
  
  ./funcex.sh 1 2
-
- 
+```
+bash: ./funcex.sh: Permission denied
+```
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1034,7 +1067,22 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ```
++ ((  3  ))
++ echo 1
+1
++ shift
++ ((  2  ))
++ echo 2
+2
++ shift
++ ((  1  ))
++ echo 3
+3
++ shift
++ ((  0  ))
++ set +x
+```
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1051,7 +1099,11 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ```
+1
+2
+3
+```
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1064,7 +1116,22 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+ ```
++ ((  3  ))
++ echo 1
+1
++ shift
++ ((  2  ))
++ echo 2
+2
++ shift
++ ((  1  ))
++ echo 3
+3
++ shift
++ ((  0  ))
++ set +x
+```
  
 cat > nc.awk
 ```bash
@@ -1095,7 +1162,21 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ```
+ 7 	 bcdfghj
+8 	 abcdfghj
+7 	 bcdfghj
+8 	 ebcdfghj
+7 	 bcdfghj
+8 	 ibcdfghj
+7 	 bcdfghj
+8 	 obcdfghj
+7 	 bcdfghj
+8 	 ubcdfghj
+total characters 75
+Number of Lines are 10
+No of Words count: 10
+```
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1122,7 +1203,11 @@ else
 fi
 ```
 ## OUTPUT 
-
+```
+Enter the number
+45
+Number is NOT palindrome
+```
 
 # RESULT:
 The Commands are executed successfully.
