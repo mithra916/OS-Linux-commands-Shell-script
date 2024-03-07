@@ -401,15 +401,14 @@ tar -cvf backup.tar *
 ![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/be3022b8-cd04-456c-915b-f3244f11a9e8)
 
 
-![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/5fe44737-6f37-4e70-b9ef-353d7f59dc77)
-
-
 mkdir backupdir
  
 mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+
+![image](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/5fe44737-6f37-4e70-b9ef-353d7f59dc77)
 
 
 tar -xvf backup.tar
@@ -419,11 +418,47 @@ gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ```
+argshift1.sh   file11        fornested1.sh  OS-Linux-commands-Shell-script
+argshift.sh    file2         funcex.sh      palindrome.sh
+backupdir      file21        herecheck.txt  psswdperm.sh
+backup.tar.gz  file22        ifcompound.sh  scriptest.sh
+casecheck.sh   file23        ifnested1.sh   strcomp.sh
+cities         forbreak.sh   ifnested.sh    untiltest.sh
+data.dat       forctype.sh   iftest.sh      urllist.txt
+elifcheck.sh   forin1.sh     my-script.sh   whiletest
+exread1.sh     forin2.sh     nc.awk         whiletest.sh
+exread.sh      forin3.sh     newfile
+file1          forinfile.sh  one 
 gunzip backup.tar.gz
+```
 ## OUTPUT
-
- 
+```
+argshift1.sh   file11        fornested1.sh  OS-Linux-commands-Shell-script
+argshift.sh    file2         funcex.sh      palindrome.sh
+backupdir      file21        herecheck.txt  psswdperm.sh
+backup.tar.gz  file22        ifcompound.sh  scriptest.sh
+casecheck.sh   file23        ifnested1.sh   strcomp.sh
+cities         forbreak.sh   ifnested.sh    untiltest.sh
+data.dat       forctype.sh   iftest.sh      urllist.txt
+elifcheck.sh   forin1.sh     my-script.sh   whiletest
+exread1.sh     forin2.sh     nc.awk         whiletest.sh
+exread.sh      forin3.sh     newfile
+file1          forinfile.sh  one
+(base) sec@sec-ThinkPad-E15-Gen-4:~/os/ex01/backupdir$ gunzip backup.tar.gz
+(base) sec@sec-ThinkPad-E15-Gen-4:~/os/ex01/backupdir$ ls
+argshift1.sh  file11        fornested1.sh  OS-Linux-commands-Shell-script
+argshift.sh   file2         funcex.sh      palindrome.sh
+backupdir     file21        herecheck.txt  psswdperm.sh
+backup.tar    file22        ifcompound.sh  scriptest.sh
+casecheck.sh  file23        ifnested1.sh   strcomp.sh
+cities        forbreak.sh   ifnested.sh    untiltest.sh
+data.dat      forctype.sh   iftest.sh      urllist.txt
+elifcheck.sh  forin1.sh     my-script.sh   whiletest
+exread1.sh    forin2.sh     nc.awk         whiletest.sh
+exread.sh     forin3.sh     newfile
+file1         forinfile.sh  one
+```
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
@@ -432,8 +467,6 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
- 
 cat << stop > herecheck.txt
 ```
 hello in this world
@@ -484,26 +517,45 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
- 
+```
+./scriptest.sh: line 1: #!/bin/sh: No such file or directory
+“File name is ./scriptest.sh ”
+File name is  scriptest.sh
+“First arg. is ” 1
+“Second arg. is ” 2
+“Third arg. is ” 3
+“Fourth arg. is ”
+The $@ is  1 2 3
+The $\# is  1#
+The $$ is  14337
+    PID TTY          TIME CMD
+  13614 pts/1    00:00:00 bash
+  14337 pts/1    00:00:00 bash
+  14340 pts/1    00:00:00 ps
+```
 ls file1
 ## OUTPUT
-
+```
+file1
 echo $?
+```
 ## OUTPUT 
+```
+0
 ./one
 bash: ./one: Permission denied
- 
 echo $?
+```
 ## OUTPUT 
- 
+```
+127
 abcd
- 
+ ```
 echo $?
  ## OUTPUT
-
-
- 
+ ```
+127
+```
 # mis-using string comparisons
 
 cat < strcomp.sh 
@@ -533,15 +585,15 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
-
-
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
-
+```
+./strcomp.sh: line 1: #!/bin/bash: No such file or directory
+baseball is less than hockey
+./strcomp.sh: line 10: ^d: command not found
+```
 # check file ownership
 cat < psswdperm.sh 
 ```bash
@@ -567,7 +619,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-
+bash: ./psswdperm.sh: Permission denied
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -613,9 +665,13 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
-
-
+```
+./ifnested.sh: line 1: #!/bin/bash: No such file or directory
+“/home/sec The object exists, is it a file?”
+“No,/home/sec it is not a file!”
+“But /home/sec/.bash_history is a file!”
+./ifnested.sh: line 18: ^d: command not found
+```
 # using numeric test comparisons
 cat > iftest.sh 
 ```bash
@@ -706,7 +762,10 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-
+```
+./elifcheck.sh: line 1: #!/bin/bash: No such file or directory
+Sorry, you are not allowed here
+```
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -734,7 +793,10 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+```
+./ifcompound.sh: line 1: #!/bin/bash: No such file or directory
+The file exists and you can write to it
+```
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -750,7 +812,10 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+```
+./ifcompound.sh: line 1: #!/bin/bash: No such file or directory
+The file exists and you can write to it
+```
 # using the case command
 cat >casecheck.sh 
 ```bash
