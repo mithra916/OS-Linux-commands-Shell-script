@@ -445,6 +445,8 @@ stop
 cat herecheck.txt
 ## OUTPUT
 
+![1](https://github.com/mithra916/OS-Linux-commands-Shell-script/assets/149986612/001789dd-0327-4df4-b836-147cfbfe943c)
+
 
 cat < scriptest.sh 
 ```bash
