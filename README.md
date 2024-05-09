@@ -1,5 +1,7 @@
 # OS-Linux-commands-Shell-scripting
 Operating systems Lab exercise
+# Developed by:LOGA MITHRA.R
+# Register number:212223100027
 # Linux commands-Shell scripting
 Linux commands-Shell scripting
 # AIM:
